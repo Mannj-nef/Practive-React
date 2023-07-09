@@ -1,4 +1,5 @@
-@import "../../../styles/variable.scss";
+@import "../../../styles/variable";
+@import "../../../styles/mixins.scss";
 
 .header {
     position: fixed;
@@ -38,8 +39,16 @@
                 text-transform: capitalize;
             }
         }
+        @include screen($breakpoints-xs, $breakpoints-lg) {
+            display: none;
+        }
     }
 
     .menu-mobile {
+        display: none;
+
+        @include screen($breakpoints-xs, $breakpoints-lg) {
+            display: block;
+        }
     }
 }
