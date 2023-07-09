@@ -1,0 +1,10 @@
+.logo-wrapper {
+    min-width: 220px;
+    height: 17px;
+
+    .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,11 @@
+@mixin screen($min-width, $max-width: 0) {
+    @if $max-width != 0 {
+        @media screen and (min-width: $min-width) and (max-width: $max-width) {
+            @content;
+        }
+    } @else {
+        @media screen and (min-width: $min-width) {
+            @content;
+        }
+    }
+}

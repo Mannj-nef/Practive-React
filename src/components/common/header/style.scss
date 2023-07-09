@@ -1,0 +1,54 @@
+@import "../../../styles/variable";
+@import "../../../styles/mixins.scss";
+
+.header {
+    position: fixed;
+
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 22px 28px;
+
+    background-color: $third-color;
+
+    top: 24px;
+    left: 0;
+    right: 0;
+    z-index: 50;
+
+    color: $primary-color;
+    // background-color: $bg-blur;
+
+    .navigate {
+        display: flex;
+        gap: 45px;
+        & li {
+            align-items: center;
+            .link {
+                font-family: $font-primary;
+                text-decoration: none;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.8px;
+                color: $primary-color;
+                text-transform: capitalize;
+            }
+        }
+        @include screen($breakpoints-xs, $breakpoints-lg) {
+            display: none;
+        }
+    }
+
+    .menu-mobile {
+        display: none;
+
+        @include screen($breakpoints-xs, $breakpoints-lg) {
+            display: block;
+        }
+    }
+}
