@@ -1,5 +1,5 @@
 import Logo from '~/components/logo';
-import LinkItem from './parts/LinkItem';
+import LinkItem from '../parts/LinkItem';
 import { links } from './parts/mockData';
 import MenuMobile from './parts/MenuMobile';
 
