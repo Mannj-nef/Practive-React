@@ -1,0 +1,33 @@
+// Font family
+$font-primary: "Open Sans";
+$font-secondary: "Anton";
+$font-third: "Open Sans Condensed";
+
+// Breakpoints
+$breakpoints-xs: 319.08px;
+$breakpoints-sm: 600px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 1024px;
+$breakpoints-xl: 1320px;
+
+// font_size
+$text-base: 14px;
+$text-md: 16px;
+$text-lg: 18px;
+$text-xl: 22px;
+$text-2xl: 44px;
+$text-3xl: 62px;
+$text-4xl: 64px;
+$text-5xl: 92px;
+
+$tablet: calc($breakpoints-xl - 0.2px);
+
+// colors
+$primary-color: #fff;
+$secondary-color: #000;
+$text-color: #313131;
+$bg-blur: rgba(255, 255, 255, 0.01);
+$bg-thumbanails: #f1f1f1;
+$third-color: #ff9568;
+$shadow: 0px 4px 12px rgba(0, 0, 0, 0.07);
+$hadow-horver: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
