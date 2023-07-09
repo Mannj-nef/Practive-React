@@ -1,0 +1,8 @@
+@use "./style";
+@import "./variable.scss";
+
+.app {
+    font-family: $font-primary;
+    max-width: 1400px;
+    margin: 0 auto;
+}
