@@ -2,18 +2,22 @@ import Logo from '~/components/logo';
 
 import logoImageUrl from '~/assets/images/space-neo-logo-black.png';
 import LinkItem from '../parts/LinkItem';
-import { links } from './parts/dataMock';
+import { ILink } from '~/interfaces/link';
 
 import './style.scss';
 
-const Footer = () => {
+interface IFooter {
+  links: ILink[];
+}
+
+const Footer = ({ links }: IFooter) => {
   return (
     <div className='footer'>
       <div style={{ display: 'inherit' }}>
         <Logo src={logoImageUrl}></Logo>
       </div>
 
-      <div className='footer-wrapp-right'>
+      <div className='footer-wrap-right'>
         <ul className='navigate'>
           {links.map((link) => (
             <li key={link.id}>
