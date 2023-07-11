@@ -1,5 +1,23 @@
+import Banner from '~/modules/home/banner/Banner';
+
 const Home = () => {
-  return <div>home page</div>;
+  return (
+    <div className='home-page'>
+      {/* banner */}
+      <Banner
+        bannerLaunchTitle=' Lorem ipsum text as placeholder for this section of text. To be filled in later with
+            something meaningful and space themed. Lorem ipsum text as placeholder for this section
+            of text. To be filled in later with something meaningful and space themed. Lorem ipsum
+            text as placeholder for this section of text. To be filled in later with something
+            meaningful and space themed.'
+        bannerLaunchSubTitle='Lorem ipsum text as placeholder for this section of text. To be filled in later.'
+      ></Banner>
+
+      {/* thumb */}
+
+      {/* faq */}
+    </div>
+  );
 };
 
 export default Home;
