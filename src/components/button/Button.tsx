@@ -1,7 +1,5 @@
 import { ReactNode } from 'react';
 
-import './style.scss';
-
 type classButton = 'button-primary' | 'button-secondary';
 
 interface IButton {

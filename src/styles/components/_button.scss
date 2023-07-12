@@ -1,5 +1,4 @@
-@import "../../styles/variable.scss";
-@import "../../styles/mixins.scss";
+@use "../abstracts/" as *;
 
 .button {
     font-size: $text-lg;

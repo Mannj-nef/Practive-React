@@ -1,5 +1,4 @@
-@use "./style";
-@import "./variable.scss";
+@use "../abstracts/" as *;
 
 .container {
     font-family: $font-primary;

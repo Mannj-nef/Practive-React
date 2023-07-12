@@ -9,8 +9,6 @@ import bgRocketImageURl from '~/assets/images/Sec-rocket-BG-lg.png';
 import bgLaunchedImageURl from '~/assets/images/Sec-rocket-launched-BG-lg.png';
 import bgLounchImageUrl from '~/assets/images/LAUNCH-txt.png';
 
-import './style.scss';
-
 interface IBanner {
   bannerLaunchTitle: string;
   bannerLaunchSubTitle: string;

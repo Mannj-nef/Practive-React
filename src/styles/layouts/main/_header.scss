@@ -1,5 +1,4 @@
-@import "../../../styles/variable";
-@import "../../../styles/mixins.scss";
+@use "../../abstracts/" as *;
 
 .header {
     position: fixed;
