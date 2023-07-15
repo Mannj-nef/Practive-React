@@ -1,3 +1,4 @@
+import datas from '~/mockData/thumbnail';
 import Banner from '~/modules/home/banner/Banner';
 import Thumbnail from '~/modules/home/thumbnail/Thumbnail';
 
@@ -15,7 +16,7 @@ const Home = () => {
       ></Banner>
 
       {/* thumb */}
-      <Thumbnail></Thumbnail>
+      <Thumbnail datas={datas}></Thumbnail>
       {/* faq */}
     </div>
   );

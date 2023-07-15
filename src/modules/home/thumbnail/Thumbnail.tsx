@@ -1,8 +1,12 @@
-import datas from '~/mockData/thumbnail';
 import Item from './parts/Item';
 import Button from '~/components/button/Button';
+import { IThumbnailData } from '~/interfaces';
 
-const Thumbnail = () => {
+interface IThumbnail {
+  datas: IThumbnailData[];
+}
+
+const Thumbnail = ({ datas }: IThumbnail) => {
   return (
     <div className='thumbnails '>
       {datas.map((item) => (
@@ -15,7 +19,7 @@ const Thumbnail = () => {
         ></Item>
       ))}
       <div className='thumbnail-btn'>
-        <Button className='button-secondary' classCusstom='button-thumbnail'>
+        <Button type='secondary' className='button-thumbnail'>
           SEE ALL NEWS UPDATES
         </Button>
       </div>

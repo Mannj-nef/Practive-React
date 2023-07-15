@@ -1,4 +1,4 @@
-export interface IThumbnail {
+export interface IThumbnailData {
   id: number;
   title: string;
   desc: string;
