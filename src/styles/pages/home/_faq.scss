@@ -1,0 +1,62 @@
+@use "../../abstracts/" as *;
+
+.faq {
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    &-wrap {
+        padding: 0 126px 70px;
+
+        @include screen($breakpoints-md, $tablet) {
+            padding: 0 43px 127px;
+        }
+
+        @include screen($breakpoints-xs, 767.08px) {
+            padding-left: 15px;
+            padding-right: 31px;
+        }
+    }
+
+    &-image {
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    &-heading {
+        font-family: $font-secondary;
+        font-size: 64px;
+        margin-bottom: 40px;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        margin-bottom: 70px;
+    }
+
+    &-title {
+        color: $primary-color;
+        font-family: $font-primary;
+        font-size: $text-34px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.4px;
+
+        text-transform: uppercase;
+
+        @include screen($breakpoints-xs, 767.08px) {
+            font-size: $text-xl;
+        }
+    }
+
+    &-desc {
+        font-weight: 600;
+        line-height: 1.7;
+        font-size: $text-base;
+    }
+}

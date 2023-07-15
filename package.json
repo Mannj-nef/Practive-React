@@ -36,6 +36,7 @@
     "*.tsx,ts,scss": [
       "npm run lint",
       "npm run preview",
+      "npm run check",
       "git add ."
     ]
   }

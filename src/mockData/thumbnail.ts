@@ -1,7 +1,7 @@
 import thum from '~/assets/images/pic-power-poles-lg.png';
-import { IThumbnail } from '~/interfaces';
+import { IThumbnailData } from '~/interfaces';
 
-const datas: IThumbnail[] = [
+export const datas: IThumbnailData[] = [
   {
     id: 1,
     title: 'New Hawk Set to Launch in early May',
@@ -24,5 +24,3 @@ const datas: IThumbnail[] = [
     imgUrl: thum
   }
 ];
-
-export default datas;
