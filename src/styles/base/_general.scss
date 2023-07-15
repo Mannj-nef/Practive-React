@@ -1,7 +1,6 @@
-@use "./style";
-@import "./variable.scss";
+@use "../abstracts/" as *;
 
-.app {
+.container {
     font-family: $font-primary;
     max-width: 1400px;
     margin: 0 auto;

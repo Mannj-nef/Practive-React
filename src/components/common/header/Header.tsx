@@ -5,8 +5,6 @@ import MenuMobile from './parts/MenuMobile';
 import logoImageUrl from '~/assets/images/space-neo-logo.png';
 import { ILink } from '~/interfaces/link';
 
-import './style.scss';
-
 interface IHeader {
   links: ILink[];
 }

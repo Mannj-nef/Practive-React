@@ -1,5 +1,4 @@
-@import "../../../styles/variable";
-@import "../../../styles/mixins.scss";
+@use "../../abstracts/" as *;
 
 .header {
     position: fixed;
@@ -12,15 +11,13 @@
     margin: 0 auto;
     padding: 22px 28px;
 
-    background-color: $third-color;
-
     top: 24px;
     left: 0;
     right: 0;
     z-index: 50;
 
     color: $primary-color;
-    // background-color: $bg-blur;
+    background-color: $bg-blur;
 
     .navigate {
         display: flex;

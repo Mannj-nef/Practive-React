@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+
+.button {
+    font-size: $text-lg;
+    font-weight: 700;
+
+    cursor: pointer;
+    background-color: transparent;
+    border: 4px solid currentColor;
+    display: inline-block;
+
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    z-index: 1;
+
+    &-primary {
+        color: $primary-color;
+        border-color: $primary-color;
+        padding: 25px 54px;
+    }
+
+    @include screen($breakpoints-xs, $breakpoints-lg) {
+        font-size: $text-base;
+
+        &-primary {
+            padding: 24px 33px;
+        }
+    }
+}

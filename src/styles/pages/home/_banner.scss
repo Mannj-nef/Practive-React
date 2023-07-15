@@ -1,0 +1,193 @@
+@use "../../abstracts/" as *;
+
+.banner {
+    background-color: $secondary-color;
+    padding-bottom: 130px;
+    font-family: $font-primary;
+    color: $primary-color;
+
+    &-wrap {
+        position: relative;
+        color: $primary-color;
+
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+
+        &-image {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        .banner-infor {
+            position: absolute;
+            top: 330px;
+            padding: 0 13px;
+
+            z-index: 1;
+
+            &-sub-title,
+            &-title,
+            &-link,
+            &-button {
+                text-transform: uppercase;
+            }
+
+            &-sub-title {
+                font-size: $text-4xl;
+                line-height: 1.13;
+                font-weight: 400;
+                margin-bottom: 17px;
+                padding-right: 50px;
+                letter-spacing: 0.1em;
+            }
+
+            &-title {
+                font-family: $font-secondary;
+                font-size: $text-5xl;
+                line-height: 1.16;
+                margin-bottom: 17px;
+            }
+
+            &-link {
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 34px;
+                line-height: 1.35;
+                font-size: $text-lg;
+
+                color: $primary-color;
+            }
+
+            @include screen($breakpoints-xs, $breakpoints-lg) {
+                top: 120px;
+
+                &-sub-title {
+                    margin-right: 50px;
+                    font-size: $text-2xl;
+                    letter-spacing: 4.4px;
+                    margin-bottom: 17px;
+                }
+
+                &-title {
+                    font-size: $text-3xl;
+                    line-height: 1.16;
+                    margin-bottom: 17px;
+                    margin-right: 50px;
+                }
+
+                &-link {
+                    font-size: $text-base;
+                    letter-spacing: 1.4px;
+                }
+            }
+        }
+    }
+
+    &-launch-wrap {
+        position: relative;
+        margin: 130px;
+        margin-bottom: 0;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .wrap-text-image {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            opacity: 0.3;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @include screen($breakpoints-xs, $breakpoints-sm) {
+                display: none;
+            }
+        }
+
+        .launch-infor {
+            top: 50%;
+            transform: translateY(-50%);
+            right: 120px;
+
+            position: absolute;
+
+            width: 480px;
+            padding: 67px 50px 70px;
+
+            background: rgba(25, 65, 106, 0.5);
+            backdrop-filter: blur(22px);
+
+            &-desc {
+                margin: 33px 0 49px;
+                font-weight: 600;
+                line-height: 1.7;
+            }
+
+            &-title {
+                font-family: $font-secondary;
+                font-size: $text-4xl;
+                line-height: 1.13;
+                margin-bottom: 17px;
+                padding-right: 50px;
+            }
+
+            .button {
+                width: 290px;
+            }
+
+            @include screen($breakpoints-xs, $tablet) {
+                width: 448px;
+                right: 0;
+            }
+
+            @include screen($breakpoints-xs, $breakpoints-sm) {
+                bottom: 0;
+                padding: 67px 20px;
+                transform: translateY(73%);
+                width: auto;
+
+                font-size: $text-base;
+
+                &-desc {
+                    margin: 33px 0 49px;
+                    font-weight: 600;
+                    line-height: 1.7;
+                    font-size: $text-base;
+                }
+
+                &-title {
+                    font-size: $text-3xl;
+                }
+
+                .button {
+                    width: 224px;
+                    height: 68px;
+                }
+            }
+        }
+
+        @include screen($breakpoints-xs, $tablet) {
+            margin: 0;
+            padding-bottom: 600px;
+        }
+    }
+
+    @include screen($breakpoints-xs, $tablet) {
+        padding-bottom: 0;
+    }
+
+    @include screen($breakpoints-xs, $breakpoints-sm) {
+        padding-bottom: 500px;
+    }
+}

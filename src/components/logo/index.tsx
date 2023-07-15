@@ -1,5 +1,3 @@
-import './style.scss';
-
 interface ILogo {
   src: string;
   alt?: string;
