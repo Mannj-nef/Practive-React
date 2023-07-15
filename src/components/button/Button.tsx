@@ -1,17 +1,18 @@
 import { ReactNode } from 'react';
 
-type classButton = 'button-primary' | 'button-secondary';
+type type = 'primary' | 'secondary';
 
 interface IButton {
   children: ReactNode;
-  className?: classButton;
+  type?: type;
+  className?: string;
 }
 
-const Button = ({ children, className = 'button-primary' }: IButton) => {
+const Button = ({ children, className = 'button-primary', type = 'primary' }: IButton) => {
   const handleClick = () => {};
 
   return (
-    <button className={`button ${className}`} onClick={handleClick}>
+    <button className={`button button-${type} ${className} `} onClick={handleClick}>
       {children}
     </button>
   );

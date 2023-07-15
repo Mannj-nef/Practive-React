@@ -2,9 +2,7 @@ import Logo from '~/components/logo';
 
 import logoImageUrl from '~/assets/images/space-neo-logo-black.png';
 import LinkItem from '../parts/LinkItem';
-import { ILink } from '~/interfaces/link';
-
-import './style.scss';
+import { ILink } from '~/interfaces/';
 
 interface IFooter {
   links: ILink[];

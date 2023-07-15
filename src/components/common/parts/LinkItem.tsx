@@ -1,8 +1,6 @@
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
-import './style.scss';
-
 interface ILinkItem {
   href: string;
   children: ReactNode;

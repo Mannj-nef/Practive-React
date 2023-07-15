@@ -24,6 +24,7 @@ $text-4xl: 64px;
 $text-5xl: 92px;
 
 $tablet: calc($breakpoints-xl - 0.2px);
+$tabletSmall: calc($breakpoints-md - 0.02px);
 
 // colors
 $primary-color: #fff;
