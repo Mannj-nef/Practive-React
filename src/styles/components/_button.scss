@@ -14,16 +14,24 @@
     transition: all 1s;
     z-index: 1;
 
+    &-primary,
+    &-secondary {
+        padding: 25px 54px;
+    }
+
     &-primary {
         color: $primary-color;
-        border-color: $primary-color;
-        padding: 25px 54px;
+    }
+
+    &-secondary {
+        color: $secondary-color;
     }
 
     @include screen($breakpoints-xs, $breakpoints-lg) {
         font-size: $text-base;
 
-        &-primary {
+        &-primary,
+        &-secondary {
             padding: 24px 33px;
         }
     }

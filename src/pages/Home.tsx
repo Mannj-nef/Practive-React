@@ -1,4 +1,5 @@
 import Banner from '~/modules/home/banner/Banner';
+import Thumbnail from '~/modules/home/thumbnail/Thumbnail';
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       ></Banner>
 
       {/* thumb */}
-
+      <Thumbnail></Thumbnail>
       {/* faq */}
     </div>
   );

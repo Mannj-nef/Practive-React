@@ -5,13 +5,14 @@ type classButton = 'button-primary' | 'button-secondary';
 interface IButton {
   children: ReactNode;
   className?: classButton;
+  classCusstom?: string;
 }
 
-const Button = ({ children, className = 'button-primary' }: IButton) => {
+const Button = ({ children, className = 'button-primary', classCusstom }: IButton) => {
   const handleClick = () => {};
 
   return (
-    <button className={`button ${className}`} onClick={handleClick}>
+    <button className={`button ${className} ${classCusstom}`} onClick={handleClick}>
       {children}
     </button>
   );

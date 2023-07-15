@@ -3,7 +3,7 @@ import LinkItem from '../parts/LinkItem';
 import MenuMobile from './parts/MenuMobile';
 
 import logoImageUrl from '~/assets/images/space-neo-logo.png';
-import { ILink } from '~/interfaces/link';
+import { ILink } from '~/interfaces/';
 
 interface IHeader {
   links: ILink[];

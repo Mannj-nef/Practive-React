@@ -1,4 +1,4 @@
-import { ILink } from '~/interfaces/link';
+import { ILink } from '~/interfaces/';
 
 export const linkHeaders: ILink[] = [
   {
