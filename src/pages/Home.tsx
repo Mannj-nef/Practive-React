@@ -1,6 +1,7 @@
-import datas from '~/mockData/thumbnail';
+import { datasMock, datas } from '~/mockData/';
 import Banner from '~/modules/home/banner/Banner';
 import Thumbnail from '~/modules/home/thumbnail/Thumbnail';
+import Faq from '~/modules/home/Faq/Faq';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       {/* thumb */}
       <Thumbnail datas={datas}></Thumbnail>
       {/* faq */}
+      <Faq datas={datasMock}></Faq>
     </div>
   );
 };
