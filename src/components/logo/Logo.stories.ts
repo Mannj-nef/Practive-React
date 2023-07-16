@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import Logo from '~/components/logo';
+import Logo from './index';
 import logoImageUrl from '~/assets/images/space-neo-logo-black.png';
 
 const meta = {

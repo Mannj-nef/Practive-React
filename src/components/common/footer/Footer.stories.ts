@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Footer from '~/components/common/footer/Footer';
+import Footer from './Footer';
 
 import { withRouter } from 'storybook-addon-react-router-v6';
 
