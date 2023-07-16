@@ -4,7 +4,7 @@
     position: fixed;
 
     display: flex;
-    justify-items: center;
+    align-items: center;
     justify-content: space-between;
 
     max-width: 1400px;
@@ -18,6 +18,16 @@
 
     color: $primary-color;
     background-color: $bg-blur;
+    box-shadow: $shadow;
+
+    transition: all 0.3s linear;
+
+    &.active {
+        background-color: $primary-color;
+        & .navigate li .link {
+            color: $secondary-color;
+        }
+    }
 
     .navigate {
         display: flex;
