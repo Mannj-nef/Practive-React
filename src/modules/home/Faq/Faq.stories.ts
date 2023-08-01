@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Faq from './Faq';
+import Faq from '.';
 
 import { datasMock } from '~/mockData';
 

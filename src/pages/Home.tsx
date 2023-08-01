@@ -1,7 +1,7 @@
 import { datasMock, datas } from '~/mockData/';
-import Banner from '~/modules/home/banner/Banner';
-import Thumbnail from '~/modules/home/thumbnail/Thumbnail';
-import Faq from '~/modules/home/Faq/Faq';
+import Banner from '~/modules/home/Banner';
+import Thumbnail from '~/modules/home/Thumbnail';
+import Faq from '~/modules/home/Faq';
 
 const Home = () => {
   return (

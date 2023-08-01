@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import { MainLayout } from '~/layouts/';
+import MainLayout from '~/layouts/Main';
 
 const Home = lazy(() => import('~/pages/Home'));
 

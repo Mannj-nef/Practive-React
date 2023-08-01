@@ -1,5 +1,5 @@
 import Item from './parts/Item';
-import Button from '~/components/button/Button';
+import Button from '~/components/Button';
 import { IThumbnailData } from '~/interfaces';
 
 interface IThumbnail {

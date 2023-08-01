@@ -7,19 +7,19 @@ interface IMenuMobile {
 }
 
 const MenuMobile = ({ children }: IMenuMobile) => {
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
 
-  const handleShowMenu = () => {
-    setShowMenu(!showMenu);
-  };
+  // const handleShowMenu = () => {
+  //   setShowMenu(!showMenu);
+  // };
 
   return (
     <div className='menu-mobile'>
-      <div className='menu-wrapp' onClick={handleShowMenu}>
+      <div className='menu-wrapp'>
         <img src={menuImageUrl} alt='' />
       </div>
 
-      {showMenu && children}
+      {/* {showMenu && children} */}
     </div>
   );
 };

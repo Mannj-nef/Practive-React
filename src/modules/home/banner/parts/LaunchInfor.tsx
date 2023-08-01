@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import Button from '~/components/button/Button';
+import Button from '~/components/Button';
 
 interface ILaunchInfor {
   title: string;

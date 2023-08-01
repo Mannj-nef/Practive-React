@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Banner from './Banner';
+import Banner from '.';
 import { withRouter } from 'storybook-addon-react-router-v6';
 
 const meta = {
