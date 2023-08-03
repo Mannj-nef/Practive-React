@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import Item from './parts/Item';
 import Button from '~/components/Button';
 import { IThumbnailData } from '~/interfaces';
@@ -27,4 +28,4 @@ const Thumbnail = ({ datas }: IThumbnail) => {
   );
 };
 
-export default Thumbnail;
+export default memo(Thumbnail);

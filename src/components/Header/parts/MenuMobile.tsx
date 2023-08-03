@@ -1,5 +1,7 @@
 import { ReactNode, useState } from 'react';
 
+import { memo } from 'react';
+
 import menuImageUrl from '~/assets/images/menu.png';
 
 interface IMenuMobile {
@@ -7,21 +9,21 @@ interface IMenuMobile {
 }
 
 const MenuMobile = ({ children }: IMenuMobile) => {
-  // const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-  // const handleShowMenu = () => {
-  //   setShowMenu(!showMenu);
-  // };
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
     <div className='menu-mobile'>
-      <div className='menu-wrapp'>
+      <div className='menu-wrapp' onClick={handleShowMenu}>
         <img src={menuImageUrl} alt='' />
       </div>
 
-      {/* {showMenu && children} */}
+      {showMenu && <>{children}</>}
     </div>
   );
 };
 
-export default MenuMobile;
+export default memo(MenuMobile);

@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 interface ILogo {
   src: string;
   alt?: string;
@@ -11,4 +13,4 @@ const Logo = ({ src, alt }: ILogo) => {
   );
 };
 
-export default Logo;
+export default memo(Logo);

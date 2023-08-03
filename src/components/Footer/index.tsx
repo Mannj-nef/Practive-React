@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import Logo from '~/components/Logo';
 
 import logoImageUrl from '~/assets/images/space-neo-logo-black.png';
@@ -30,4 +31,4 @@ const Footer = ({ links }: IFooter) => (
   </div>
 );
 
-export default Footer;
+export default memo(Footer);

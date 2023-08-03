@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, memo } from 'react';
 
 interface IFaqItem {
   title: string;
@@ -14,4 +14,4 @@ const Item = ({ children, title }: IFaqItem) => {
   );
 };
 
-export default Item;
+export default memo(Item);

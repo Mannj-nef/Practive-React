@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { IdataFaq } from '~/interfaces';
 import Item from './parts/Item';
 
@@ -29,4 +30,4 @@ const Faq = ({ title = 'FAQs', datas, imageUrl = faqImageUrl, alt }: IFaq) => {
   );
 };
 
-export default Faq;
+export default memo(Faq);

@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import BannerInfor from './parts/BannerInfor';
 import Button from '~/components/Button';
 import BannerLaunch from './parts/BannerLaunch';
@@ -45,4 +46,4 @@ const Banner = ({ bannerLaunchTitle, bannerLaunchSubTitle }: IBanner) => {
   );
 };
 
-export default Banner;
+export default memo(Banner);

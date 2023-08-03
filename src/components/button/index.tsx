@@ -1,4 +1,4 @@
-import { ReactNode, HTMLAttributes } from 'react';
+import { ReactNode, HTMLAttributes, memo } from 'react';
 
 type type = 'primary' | 'secondary';
 
@@ -23,4 +23,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default memo(Button);

@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 interface IThumbNailItem {
   date: string;
   title: string;
@@ -23,4 +25,4 @@ const Item = ({ date, title, desc, imgUrl, alt }: IThumbNailItem) => {
   );
 };
 
-export default Item;
+export default memo(Item);

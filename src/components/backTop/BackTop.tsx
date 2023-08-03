@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, memo } from 'react';
 import ArrowUp from '../icons/ArrowUp';
 
 const BackTop = () => {
@@ -10,6 +10,7 @@ const BackTop = () => {
 
   useEffect(() => {
     const number = 500;
+
     const handleIsShow = () => {
       if (window.scrollY > number) {
         setIsShow(true);
@@ -17,6 +18,7 @@ const BackTop = () => {
         setIsShow(false);
       }
     };
+
     document.addEventListener('scroll', handleIsShow);
 
     return () => document.removeEventListener('scroll', handleIsShow);
@@ -33,4 +35,4 @@ const BackTop = () => {
   );
 };
 
-export default BackTop;
+export default memo(BackTop);

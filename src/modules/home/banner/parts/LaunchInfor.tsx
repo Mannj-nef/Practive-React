@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, memo } from 'react';
 import Button from '~/components/Button';
 
 interface ILaunchInfor {
@@ -18,4 +18,4 @@ const LaunchInfor = ({ title = 'GET INVOLVED', titleButton, children }: ILaunchI
   );
 };
 
-export default LaunchInfor;
+export default memo(LaunchInfor);

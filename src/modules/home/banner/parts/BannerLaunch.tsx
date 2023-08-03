@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, memo } from 'react';
 
 interface IBanner {
   alt?: string;
@@ -20,4 +20,4 @@ const BannerLaunch = ({ imgUrl, subImgUrl, alt, children, height = '768px' }: IB
   );
 };
 
-export default BannerLaunch;
+export default memo(BannerLaunch);
