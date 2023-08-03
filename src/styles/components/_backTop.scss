@@ -1,0 +1,52 @@
+@use "../abstracts/" as *;
+
+.back-to-top {
+    --position: 40px;
+    --rounded: 12px;
+    position: fixed;
+
+    right: var(--position);
+    bottom: var(--position);
+
+    box-shadow: $shadow-horver;
+    border-radius: var(--rounded);
+    overflow: hidden;
+
+    z-index: 9;
+    .to-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $primary-color;
+        border-radius: var(--rounded);
+        padding: 10px;
+
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s linear;
+
+        box-shadow: rgba(108, 110, 113, 0.3) 0px 8px 24px;
+
+        cursor: pointer;
+
+        .icon-wrapper {
+            --size: 25px;
+            display: inline-block;
+            color: $secondary-color;
+
+            width: var(--size);
+            height: var(--size);
+        }
+
+        &:hover {
+            background-color: $secondary-color;
+            .icon-wrapper {
+                color: $primary-color;
+            }
+        }
+    }
+    .is-show {
+        opacity: 1;
+        visibility: initial;
+    }
+}

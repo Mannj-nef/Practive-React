@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, memo } from 'react';
 import { Link } from 'react-router-dom';
 
 interface ILinkItem {
@@ -15,4 +15,4 @@ const LinkItem = ({ href, children, className = '' }: ILinkItem) => {
   );
 };
 
-export default LinkItem;
+export default memo(LinkItem);

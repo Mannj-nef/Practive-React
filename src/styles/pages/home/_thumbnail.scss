@@ -9,14 +9,26 @@
 
     background-color: $bg-thumbanails;
 
-    @include screen($breakpoints-md, $tablet) {
-        padding: 38px;
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .thumbnail {
+        &-item {
+            font-family: $font-primary;
 
-    @include screen($breakpoints-xs, $tabletSmall) {
-        padding: 70px 20px;
-        grid-template-columns: 1fr;
+            cursor: pointer;
+            position: relative;
+            box-shadow: $shadow;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            &:hover {
+                top: -1px;
+                box-shadow: $shadow-horver;
+            }
+        }
+
+        @include screen($breakpoints-xs, $tabletSmall) {
+            padding: 70px 20px;
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -33,7 +45,7 @@
 
         &:hover {
             top: -1px;
-            box-shadow: $hadow-horver;
+            box-shadow: $shadow-horver;
         }
     }
 
