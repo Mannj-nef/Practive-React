@@ -6,20 +6,12 @@ interface IMenuMobile {
   children?: ReactNode;
 }
 
-const MenuMobile = ({ children }: IMenuMobile) => {
-  // const [showMenu, setShowMenu] = useState(false);
-
-  // const handleShowMenu = () => {
-  //   setShowMenu(!showMenu);
-  // };
-
+const MenuMobile = ({}: IMenuMobile) => {
   return (
     <div className='menu-mobile'>
       <div className='menu-wrapp'>
         <img src={menuImageUrl} alt='' />
       </div>
-
-      {/* {showMenu && children} */}
     </div>
   );
 };
