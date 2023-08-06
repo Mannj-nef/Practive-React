@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import Footer from '~/components/common/footer/Footer';
-import Header from '~/components/common/header/Header';
+import Footer from '~/components/Footer';
+import Header from '~/components/Header';
 
 import { linkFooters, linkHeaders } from '~/mockData/';
 

@@ -1,5 +1,5 @@
 import BannerInfor from './parts/BannerInfor';
-import Button from '~/components/button/Button';
+import Button from '~/components/Button';
 import BannerLaunch from './parts/BannerLaunch';
 import LaunchInfor from './parts/LaunchInfor';
 import BannerItem from './parts/BannerItem';

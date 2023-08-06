@@ -4,7 +4,7 @@ import ThumbnailItem from './Item';
 import { datas } from '~/mockData';
 
 const meta = {
-  title: 'modules/home/thumbnail/thumbnail item',
+  title: 'modules/home/thumbnail',
   component: ThumbnailItem,
   tags: ['autodocs']
 } satisfies Meta<typeof ThumbnailItem>;

@@ -9,86 +9,6 @@
 
     background-color: $bg-thumbanails;
 
-    .thumbnail {
-        &-item {
-            font-family: $font-primary;
-
-            cursor: pointer;
-            position: relative;
-            box-shadow: $shadow;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            &:hover {
-                top: -1px;
-                box-shadow: $hadow-horver;
-            }
-        }
-
-        &-image-wrap {
-            position: relative;
-            height: 276px;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-            }
-        }
-
-        &-date {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            background-color: $primary-color;
-            padding: 15px 38px;
-            font-weight: 800;
-            font-size: $text-md;
-        }
-
-        &-content {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            background-color: $primary-color;
-            padding: 27px 41px;
-        }
-
-        &-title {
-            font-size: $text-xl;
-            color: $secondary-color;
-            font-weight: 700;
-            margin-bottom: 15px;
-            font-size: $text-xl;
-            line-height: 1.4;
-        }
-
-        &-desc {
-            font-size: $text-base;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 1.4px;
-            color: $text-color;
-        }
-
-        &-btn {
-            grid-column: 2 / 3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            @include screen($breakpoints-xs, $tabletSmall) {
-                grid-column: 1 / 2;
-            }
-
-            .button-thumbnail {
-                width: 100%;
-            }
-        }
-    }
-
     @include screen($breakpoints-md, $tablet) {
         padding: 38px;
         grid-template-columns: repeat(2, 1fr);
@@ -97,5 +17,86 @@
     @include screen($breakpoints-xs, $tabletSmall) {
         padding: 70px 20px;
         grid-template-columns: 1fr;
+    }
+}
+
+.thumbnail {
+    &-item {
+        font-family: $font-primary;
+
+        cursor: pointer;
+        position: relative;
+        box-shadow: $shadow;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &:hover {
+            top: -1px;
+            box-shadow: $hadow-horver;
+        }
+    }
+
+    &-image-wrap {
+        position: relative;
+        height: 276px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    &-date {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $primary-color;
+        padding: 15px 38px;
+        font-weight: 800;
+        font-size: $text-md;
+    }
+
+    &-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        background-color: $primary-color;
+        padding: 27px 41px;
+    }
+
+    &-title {
+        font-size: $text-xl;
+        color: $secondary-color;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: $text-xl;
+        line-height: 1.4;
+    }
+
+    &-desc {
+        font-size: $text-base;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1.4px;
+        color: $text-color;
+    }
+
+    &-btn {
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include screen($breakpoints-xs, $tabletSmall) {
+            grid-column: 1 / 2;
+        }
+
+        .button-thumbnail {
+            width: 100%;
+        }
     }
 }

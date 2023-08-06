@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Thumbnail from './Thumbnail';
+import Thumbnail from '.';
 
 import { datas } from '~/mockData';
 
 const meta = {
-  title: 'modules/home/thumbnail/ thumbnail',
+  title: 'modules/home/thumbnail',
   component: Thumbnail,
   tags: ['autodocs']
 } satisfies Meta<typeof Thumbnail>;
